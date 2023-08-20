@@ -45,7 +45,7 @@ const { t } = useI18n()
     <p>
       <em text-sm opacity-75>You are currently at a Central Node within the Myriad Ecosystem</em>
     </p>
-    <img alt="Myriad Central Node logo" :src="isDark ? '/MCN_LOGO_DARK.png' : '/MCN_LOGO_LIGHT.png'">
+    <img alt="Myriad Central Node logo" :src="isDark ? '/STS_DARK.png' : '/STS_LIGHT.png'">
   </div>
 </template>
 
