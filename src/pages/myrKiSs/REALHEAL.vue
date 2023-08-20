@@ -3,21 +3,11 @@ import { useClipboard } from '@vueuse/core'
 
 const sourceContent
 = `
----
-
-uuid: goesHere
-date: goesHere
-time: goesHere
-wxrdType: meditation
-
----
-
 #maloka/healing_relationships
 
 reflections before:
 
 reflections after: 
-
 
 `
 
@@ -26,6 +16,7 @@ const { text, copy, copied, isSupported } = useClipboard({ source })
 </script>
 
 <template>
+  <p>To log this meditation in Obsidian create a new note with the default timestamps and all that, then copy this text to paste into that note, will tag it and add fields for commentary</p>
   <div v-if="isSupported">
     <button @click="copy(source)">
       <!-- by default, `copied` will be reset in 1.5s -->
